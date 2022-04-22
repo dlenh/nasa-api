@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+img,
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+}
+
+img {
+    padding-top: 5vh;
+}
+
+.description {
+    padding: 2vh 2vw;
+}
+
+h1,
+h3,
+form {
+    text-align: center;
+}
