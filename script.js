@@ -3,6 +3,7 @@ function clearSources() {
     document.querySelector("iframe").src = ""
     document.querySelector("img").src = ""
     document.querySelector(".media").textContent = ""
+    document.querySelector(".description").textContent = ""
 }
 
 function fetchFromNASA() {
@@ -21,9 +22,7 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=PqGLdW4QMcIbHfeKzoWglyELNy9lW
         } else if (data.media_type === "image") {
             document.querySelector("img").src = data.hdurl
             document.querySelector(".description").innerText = data.explanation
-        } 
-        
-        
+        }   
     })
     .catch(err => {
         console.log(`error ${err}`)
