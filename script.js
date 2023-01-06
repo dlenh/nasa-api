@@ -12,6 +12,7 @@ const input = document.querySelector("input").value
 fetch(`https://api.nasa.gov/planetary/apod?api_key=PqGLdW4QMcIbHfeKzoWglyELNy9lWs74EY5TlsqJ&date=${input}`)
     .then(res => res.json())
     .then(data => {
+        // document.querySelector("body").style.background = "white"
         console.log(data) // shows data object from nasa api
         console.log(input) // shows date user entered
         if (data.code === 400) {
@@ -23,6 +24,7 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=PqGLdW4QMcIbHfeKzoWglyELNy9lW
             document.querySelector("img").src = data.hdurl // source for when media type is image
             document.querySelector(".description").innerText = data.explanation
         }   
+        document.querySelector(".media").innerText = `APOD Title: ${data.title}`
     })
     .catch(err => {
         console.log(`error ${err}`)
