@@ -23,7 +23,7 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=PqGLdW4QMcIbHfeKzoWglyELNy9lW
         } else if (data.media_type === "image") {
             document.querySelector("img").src = data.hdurl // source for when media type is image
             document.querySelector(".description").innerText = data.explanation
-        }   
+        }
         document.querySelector(".media").innerText = `APOD Title: ${data.title}`
     })
     .catch(err => {
