@@ -6,10 +6,12 @@ function clearSources() {
     document.querySelector(".description").textContent = ""
 }
 
+const key = config.API_KEY;
+
 function fetchFromNASA() {
 clearSources();
 const input = document.querySelector("input").value
-fetch(`https://api.nasa.gov/planetary/apod?api_key=PqGLdW4QMcIbHfeKzoWglyELNy9lWs74EY5TlsqJ&date=${input}`)
+fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}&date=${input}`)
     .then(res => res.json())
     .then(data => {
         // document.querySelector("body").style.background = "white"
