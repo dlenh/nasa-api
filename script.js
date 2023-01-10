@@ -14,7 +14,6 @@ const input = document.querySelector("input").value
 fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}&date=${input}`)
     .then(res => res.json())
     .then(data => {
-        // document.querySelector("body").style.background = "white"
         console.log(data) // shows data object from nasa api
         console.log(input) // shows date user entered
         if (data.code === 400) {
