@@ -20,12 +20,8 @@ img,
 iframe {
     display: block;
     margin: 0 auto;
-    width: 100vw;
+    width: 90vw;
     height: auto;
-}
-
-img {
-    padding-top: 5vh;
 }
 
 .description {
@@ -36,4 +32,9 @@ h1,
 h3,
 form {
     text-align: center;
+}
+
+.hidden {
+    height: 0;
+    width: 0;
 }
