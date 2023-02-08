@@ -1,9 +1,9 @@
 # San Francisco Stargazer Society
 Pick a date to pull up astronomy picture of the day from NASA's API. 
 
-**Link to project:** 
+**Link to project:** https://sfstargazer.netlify.app/
 
-![alt tag]
+![Screenshot of website](https://i.gyazo.com/19309b03f147c4c46731c548a7dcca4e.png)
 
 ## How It's Made:
 
