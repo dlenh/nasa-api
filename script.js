@@ -1,4 +1,4 @@
-const key = config.API_KEY;
+const key = process.env.API_KEY;
 
 document.querySelector("button").addEventListener("click", fetchFromNASA)
 function clearSources() {
