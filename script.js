@@ -1,3 +1,5 @@
+const key = config.API_KEY;
+
 document.querySelector("button").addEventListener("click", fetchFromNASA)
 function clearSources() {
     document.querySelector("iframe").src = ""
@@ -5,8 +7,6 @@ function clearSources() {
     document.querySelector(".media").textContent = ""
     document.querySelector(".description").textContent = ""
 }
-
-const key = config.API_KEY;
 
 function fetchFromNASA() {
 clearSources();
