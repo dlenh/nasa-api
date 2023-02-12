@@ -1,4 +1,4 @@
-import API_KEY from ".apikey.js";
+import API_KEY from "./apikey.js";
 
 document.querySelector("button").addEventListener("click", fetchFromNASA)
 function clearSources() {
