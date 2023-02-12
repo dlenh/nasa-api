@@ -1,3 +1,5 @@
+import API_KEY from ".apikey.js";
+
 document.querySelector("button").addEventListener("click", fetchFromNASA)
 function clearSources() {
     document.querySelector("iframe").src = ""
@@ -9,7 +11,7 @@ function clearSources() {
 function fetchFromNASA() {
 clearSources();
 const input = document.querySelector("input").value
-fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}&date=${input}`)
+fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${input}`)
     .then(res => res.json())
     .then(data => {
         console.log(data) // shows data object from nasa api
