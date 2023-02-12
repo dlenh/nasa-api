@@ -1,5 +1,3 @@
-import API_KEY from "./apikey.js";
-
 document.querySelector("button").addEventListener("click", fetchFromNASA)
 function clearSources() {
     document.querySelector("iframe").src = ""
