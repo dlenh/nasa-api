@@ -10,7 +10,7 @@ body {
     background-image: url("images/stars.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
 }
 
 input[type=date],
