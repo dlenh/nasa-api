@@ -29,7 +29,6 @@ fetch(`https://api.nasa.gov/planetary/apod?api_key=${API_KEY}&date=${input}`)
         }
         document.querySelector(".description").innerText = data.explanation
         document.querySelector(".media").innerText = `APOD Title: ${data.title}`
-        document.querySelector("body").style.height = "100vh";
     })
     .catch(err => {
         console.log(`error ${err}`)
